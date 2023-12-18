@@ -7,16 +7,12 @@
 
   .iconWrapper {
     @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
-
-    &:hover,
-    &.active {
-      background-color: theme('colors.text2');
-    }
-    .icon {
-      color: theme('colors.text1');
-      font-size: 20px;
-    }
   }
+}
+
+.menuContainer .iconWrapper:hover,
+.menuContainer .iconWrapper.active {
+  background-color: theme('colors.text2');
 }
 
 @media screen and (max-width: 640px) {
